@@ -2,8 +2,8 @@
 //  HelpViewController.h
 //  SmartPush
 //
-//  Created by Jakey on 15/3/15.
-//  Copyright (c) 2015年 www.skyfox.org. All rights reserved.
+//  Created by 朱洪伟 on 26/2/5.
+//  Copyright © 2016年 朱洪伟. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>
