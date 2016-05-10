@@ -2,8 +2,8 @@
 //  PushViewController.m
 //  SmartPush
 //
-//  Created by 朱洪伟 on 26/2/5.
-//  Copyright © 2016年 朱洪伟. All rights reserved.
+//  Created by Jakey on 15/3/15.
+//  Copyright (c) 2015年 www.skyfox.org. All rights reserved.
 //
 
 #define Push_Developer  "gateway.sandbox.push.apple.com"
@@ -58,7 +58,7 @@
     [_defaults synchronize];
 }
 - (void)disconnect {
-    NSLog(@"断开");
+    NSLog(@"disconnect");
     
     // OSStatus result;
     
@@ -107,7 +107,7 @@
         return;
     }
     
-    NSLog(@"连接服务apple服务器");
+    NSLog(@"connect");
     
     // Define result variable.
     //OSStatus result;
@@ -259,8 +259,6 @@
     if (self.productSelect == self.mode.selectedCell) {
         _token = [self buildToken:self.productToken];
     }
-    
-    
     
     // Convert string into device token data.
     NSMutableData *deviceToken = [NSMutableData data];
